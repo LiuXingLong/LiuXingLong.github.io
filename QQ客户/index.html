@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="Author" content="hnust_LiuXingLong">
+	<meta name="Keywords" content="QQ客户，LiuXingLong，hnust_LiuXingLong,刘兴龙">
+	<meta name="Description" content="有刘兴龙独自开发的QQ客户热线，hnust_LiuXingLong">
+	<title>QQ客户系统</title>
+	<link href="QQ.ico" rel="shortcut icon" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>	
+<body>
+	<div class="qq"></div>
+	<div class="chate">
+		<ul class="Client">
+			<li>客户一号: <a href="http://wpa.qq.com/msgrd?v=3&uin=1353438279&site=qq&menu=yes/" target="_blank">
+						<img src="image/qq.jpg" align="absmiddle"/></a></li>
+			<li>客户二号: <a href="http://wpa.qq.com/msgrd?v=3&uin=1353438279&site=qq&menu=yes/" target="_blank">
+						<img src="image/qq.jpg" align="absmiddle"/></a> </li>
+			<li>客户三号: <a href="http://wpa.qq.com/msgrd?v=3&uin=1353438279&site=qq&menu=yes/" target="_blank">
+						<img src="image/qq.jpg" align="absmiddle"/></a></li>
+			<li>客户四号: <a href="http://wpa.qq.com/msgrd?v=3&uin=1353438279&site=qq&menu=yes/" target="_blank">
+						<img src="image/qq.jpg" align="absmiddle"/></a></li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+		$(".qq").hover(function(){
+			$(this).animate({right:"-=200px"},400,function(){ 		
+				$(".chate").animate({right:"+=258px"},400);		
+			});	
+			},function(){
+		});
+		$(".chate").hover(function(){
+			},function(){
+				$(this).animate({right:"-=258px"},400,function(){ 		
+					$(".qq").animate({right:"+=200px"},400);
+			});			
+		});
+		/*$(".qq").hover(function(){},function(){})当鼠标移动到元素上时触发第一个函数，当鼠标出这个元素时触发第二个函数*/		
+	</script>
+</body>
+</html>

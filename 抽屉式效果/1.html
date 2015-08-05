@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+	<head>	
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- 编码集 -->		
+		<meta name="Keywords" content="刘兴龙">  <!--关键词-->
+		<meta name="Description" content="">  <!--网站描述-->
+		<title>hnust_LiuXingLong</title>
+		<link href="favi.ico" rel="shortcut icon" type="image/x-icon" />
+		<!-- css 层叠样式表 化妆师 -->
+		<style type="text/css">
+			*{ margin:0;padding:0;}
+			body{background:url("img/bg.jpg"); margin:0 0 0 0;}/*center top;*/
+			.sig{width:220px;height:16px;margin:150px 1100px;} 
+			.sig{ background:#000;
+				  filter:alpha(opacity=50);
+			      background:rgba(0,0,0,0);
+				}
+			.sig p{ color:#fff;font-family:"微软雅黑";position:relative;}			 
+			.pic{width:1100px;height:430px; /*background-color:#3f0;*/margin:170px auto 0;}  /* margin:170px auto 0;背景图片居中 */
+			.pic ul li{list-style:none;width:100xp;height:429px;float:left;}
+			.pic .l1{ background-image:url("img/1.jpg");}
+			.pic .l2{ background-image:url("img/2.jpg");}
+			.pic .l3{ background-image:url("img/3.jpg");}
+			.pic .l4{ background-image:url("img/4.jpg"); width:789px;}
+			.txt{ width:100px; height:429px; 
+				  background:#000;
+				  filter:alpha(opacity=50);
+			      background:rgba(0,0,0,.5);
+				}
+			.txt p{ color:#fff;font-family:"微软雅黑"; float:left; position:relative;}
+			.txt .p1{ font-size:12px; width:12px; margin:25px 15px 0 20px;}  /*  顶右下左  */
+			.txt .p2{ font-size:14px; width:14px; margin-top:25px;}
+		</style>
+	</head>
+	<body>
+		<audio autoplay="autopaly">
+			<source src="Groove Coverage.mp3" type"audio/mp3"/>
+		</audio>
+		<div class="pic">
+			<ul>
+				<li class="l1">
+					<div class="txt">
+						<p class="p1">作者 ：默默的墨墨</p>
+						<p class="p2">我的个人拉萨之旅  |故事之城</p>
+					</div>
+				</li>
+				<li class="l2">
+					<div class="txt">
+						<p class="p1">作者 ：美丽的天空</p>
+						<p class="p2">拥有绝美的戈壁倾听啊沙的乐奏</p>
+					</div>
+				</li>
+				<li class="l3">
+					<div class="txt">
+						<p class="p1">作者 ：蓝染热右介</p>
+						<p class="p2">这美丽的香格里拉</p>
+					</div>
+				</li>
+				<li class="l4">
+					<div class="txt">
+						<p class="p1">作者 ：美丽的天空</p>
+						<p class="p2">征服个人项目     |南极</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="sig">
+			<p class="p1">作者 ：刘兴龙  2015年4月8日</p>
+		</div>
+	</body>
+	<script src="js/jquery.js"></script>
+		<script>
+			$(".pic ul li").hover(function(){
+			 // 当鼠标经过li的时候，执行下面事件
+		     $(this).stop(true).animate({width:"789px"},500).siblings().stop(true).animate({width:"100px"},500);
+			});
+		</script>
+</html>
+<!--div 盒子模型  长方形的区域
+		id="qqq"   qqq === 身份证号（唯一）
+		class="aa"  aa === 名字（不唯一‘多个）
+		命名规则
+			1.命名必须以英文字母开头
+			2.可以有数字 _-
+			3.见名知意
+		-->		

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="刘兴龙">
+  <meta name="Keywords" content="手风琴">
+  <meta name="Description" content="相册手风琴">
+  <title>手风琴特效</title>
+  <style type="text/css">
+  *{margin:0;padding:0;}
+	body{background:#000;color:#fff;}
+	#wrap{width:1180px;height:280px;border:6px solid #fff;margin:120px auto;/*盒子居中*/overflow:hidden;/*溢出元素强制隐藏*/}
+	#wrap ul{background:#ef4300;width:2180px;height:280px;}
+	#wrap ul li{list-style:none;/*无序列表达式前缀标点无*/ width:196.6px;height:280px;  float:left;/*浮动-》并排展示*/
+	cursor:pointer;box-shadow:0px 0px 25px 10px rgba(0,0,0,0.5);/*css3阴影*/}
+	#wrap ul li:nth-child(1){background:#00A0EA;}
+	#wrap ul li:nth-child(2){background:#65A2BF;}
+	#wrap ul li:nth-child(3){background:#00A0EA;}
+	#wrap ul li:nth-child(4){background:#EF92C7;}
+	#wrap ul li:nth-child(5){background:#378048;}
+	#wrap ul li:nth-child(6){background:#ef4300; width:1000px;box-shadow:0px 0px 0px 0px rgba(0,0,0,0.5);}
+	/*设置鼠标经过时候*/	
+	#wrap ul:hover li{width:40px;transition:all 1s;/*css3过度*/} /*当鼠标移动到 ul 上时所有的 li 的宽度都变小*/
+	#wrap ul li:hover{width:980px;transition:all 1s;} /* 将鼠标移动到 li 标签是  仅将该 li 标签变宽*/
+	.course{width:980px;margin:45px 20px;}
+	.course dl{width:210px;height:190px;border:1px solid #fff;box-shadow:0px 0px 5px #ccc;margin:0px 10px;float:left;text-align:center;/*文本内容居中*/}
+	.course dl dt{padding:5px;height:150px;}
+	.course dl dd{background:rgba(0,0,0,0.5);line-height:30px;/*文字垂直居中*/font-size:14px;/*文字字体大小*/
+	font-weight:blod; /*文字字体加粗*/}
+  </style>
+ </head>
+ <body>
+	<div id="wrap">
+		<ul>
+			<li>
+				<div class="course">
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/c1.jpg"/></a><!--超链接--></dt>
+						<dd>网站制作</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/c2.jpg"/></a><!--超链接--></dt>
+						<dd>Java编程</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/c3.jpg"/></a><!--超链接--></dt>
+						<dd>ios</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/c4.jpg"/></a><!--超链接--></dt>
+						<dd>C++</dd>
+					</dl>
+				</div>
+			</li>
+			<li>
+				<div class="course">
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/z1.jpg"/></a><!--超链接--></dt>
+						<dd>Seo排名</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/z2.jpg"/></a><!--超链接--></dt>
+						<dd>微信营销</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/z3.png"/></a><!--超链接--></dt>
+						<dd>平面设计</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/z4.jpg"/></a><!--超链接--></dt>
+						<dd>淘宝美工</dd>
+					</dl>
+				</div>
+			</li>
+			<li>
+				<div class="course">
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/x1.png"/></a><!--超链接--></dt>
+						<dd>网站制作</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/x2.png"/></a><!--超链接--></dt>
+						<dd>Java编程</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/x3.png"/></a><!--超链接--></dt>
+						<dd>ios</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/x4.jpg"/></a><!--超链接--></dt>
+						<dd>C++</dd>
+					</dl>
+				</div>
+			</li>
+			<li>
+				<div class="course">
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/y1.jpg"/></a><!--超链接--></dt>
+						<dd>网站制作</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/y2.jpg"/></a><!--超链接--></dt>
+						<dd>Java编程</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/y3.jpg"/></a><!--超链接--></dt>
+						<dd>ios</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/y4.jpg"/></a><!--超链接--></dt>
+						<dd>C++</dd>
+					</dl>
+				</div>
+			</li>
+			<li>
+				<div class="course">
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/b1.jpg"/></a><!--超链接--></dt>
+						<dd>网站制作</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/b2.jpg"/></a><!--超链接--></dt>
+						<dd>Java编程</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/b3.jpg"/></a><!--超链接--></dt>
+						<dd>ios</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/b4.jpg"/></a><!--超链接--></dt>
+						<dd>C++</dd>
+					</dl>
+				</div>
+			</li>
+			<li>
+				<div class="course">
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/q1.jpg"/></a><!--超链接--></dt>
+						<dd>网站制作</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/q2.jpg"/></a><!--超链接--></dt>
+						<dd>Java编程</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/q3.jpg"/></a><!--超链接--></dt>
+						<dd>ios</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://www.baidu.com/"><img src="img/q4.jpg"/></a><!--超链接--></dt>
+						<dd>C++</dd>
+					</dl>
+				</div>
+			</li>
+		</ul>
+	</div>  
+ </body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus?">
+  <meta name="Author" content="hnust_LiuXingLong">
+  <meta name="Keywords" content="hnust_LiuXingLong">
+  <meta name="Description" content="我的个人作业">
+  <title>百度换肤</title>
+	<style type="text/css">
+	*{margin:0px; padding:0px;}  /*去掉内外边距 */
+	a{
+	  color:#fff; margin-top:20px;display:block;
+	  margin-left:990px;font-size:13px;cursor:pointer;	
+	 }
+	body{background:url("images/bg4.jpg");}
+	.con{
+		 width:911px; height:317px;                                           /*border:1px; solid #33fffff;   设置边框的颜色 */
+		 margin:255px auto;	 
+		}
+	.head{width:100%; height:0px; background:#fff;overflow:hidden;/* 超出隐藏*/   /* display:none; background:#99ffff;*/
+		  position:fixed;   /* 固定定位 以浏览器为参照物 */
+		  left:0px;top:0px;
+	     }
+	.menu{width:100%;height:45px;}				
+	.title{
+		   width:911px;height:45px;                                           /*border:1px solid red;  设置边框的颜色*/
+		   margin:0px auto;                                                   /*居中*/
+		  }
+	 .p1{width:571px; height:45px; background:url("images/tj.png"); float:left; cursor:pointer; }/*cursor:pointer;手形*/
+	 .p2{width:45px;  height:45px; background:url("images/sq.png"); float:right;cursor:pointer; }
+	 .bg{width:911px; height:205px; margin:25px auto;}                     
+	 .bgcon{width:590px;  height:190px;  float:left;}					  
+	 .bgcon img{ 
+				width:97px;height:59px;display:block;float:left;
+				margin-right:1px;margin-bottom:1px;
+			   }
+	 .bgcon .big{width:195px;height:119px;}
+	 .bgcon .last{position:relative;top:-60px;}
+	 .bgyl{
+		   width:264px;height:180px;
+		   float:right;background:url("images/bg0.jpg");
+		   background-size:264px;
+		  }
+	</style>
+ </head>
+ <body>
+	<a href="#">换肤</a>           <!--超链接--> <!-- <a href="http://www.baidu.com">换肤</a> -->
+	<div class="con"><img src="images/content.png"></div>  
+	<div class="head">
+		<div class="menu">
+			<div class="title">
+				<p class="p1"></p>
+				<p class="p2"></p>
+			</div>
+		</div>
+		<div class="bg">
+			<div class="bgcon">
+				<img class="big" src="images/0.jpg"/>
+				<img src="images/1.jpg"/>
+				<img src="images/2.jpg"/>
+				<img src="images/3.jpg"/>
+				<img src="images/4.jpg"/>
+				<img src="images/5.jpg"/>
+				<img class="big" src="images/6.jpg"/>
+				<img src="images/7.jpg"/>
+				<img src="images/8.jpg"/>
+				<img class="last" src="images/9.jpg"/>
+				<img class="last" src="images/10.jpg"/>
+				<img class="last" src="images/11.jpg"/>
+			</div>
+			<div class="bgyl"><img src="images/yl.png"/></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+	    var i=0; /* 存放鼠标活动到的图片*/
+		$("a").click(function(){
+			$(".head").animate({height:"288px"},500);
+			/*alert("helloworld");*/
+		})
+		$(".p2").click(function(){
+			$(".head").animate({height:"0px"},500);
+		})
+/*移动*/$(".bgcon img").hover(function(){
+			i=$(this).index();
+			$(".bgyl").css("background",'url(images/'+i+'.jpg)');
+			$(".bgyl").css("backgroound-size","264px 180px");
+		})
+/*点击*/$(".bgcon img").click(function(){
+			$("body").css("background",'url(images/bg'+i+'.jpg)');
+		})
+	</script>
+ </body>
+</html>
