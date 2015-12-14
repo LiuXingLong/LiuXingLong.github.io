@@ -1,0 +1,45 @@
+var removebid=null;
+function savebid(bid){
+	removebid=bid;
+}
+function remove1(flag){	
+	if(flag==1){
+		removebid=null;
+	}else{
+		$.ajax({
+   	        type: "POST",
+   	        url: '{:U('Index/remove')}',
+   	        data: { bid:removebid},
+   	        success: function (data){
+   	        	if(data=="Error"){ 
+   	            	alert("删除失败！");	    	            	
+   	            }	
+   	        	window.location.href ="{:U('Index/index')}";
+   	        }
+   	    });				
+	}					
+}
+
+
+
+<a id="modal-1" href="#modal-container-1" role="button" style="float:right;" class="btn" data-toggle="modal"  onclick="savebid({$v.bid})">删除</a>
+
+<!-- 模态框 -->
+
+<div id="modal-container-1" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-header">
+		 <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="remove1(1)">×</button>
+		<h3 id="myModalLabel">
+			桥梁删除
+		</h3>
+	</div>
+	<div class="modal-body">
+		<p>
+			确认删除该桥梁吗？
+		</p>
+	</div>
+	<div class="modal-footer">
+		 <button class="btn" data-dismiss="modal" aria-hidden="true" onclick="remove1(1)">关闭</button> 
+		 <button class="btn btn-primary"  data-dismiss="modal" aria-hidden="true" onclick="remove1()">确认</button>
+	</div>
+</div>
