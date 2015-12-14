@@ -1,0 +1,25 @@
+<input type="checkbox" onchange="check(this)"  value="">
+
+checkbox  实现单选(可选也可不选)  checkbox失效使用   onchange 函数	
+
+var obj=null;
+function check(a){			
+	if(obj!=null&&obj!=a){
+		obj.checked=!obj.checked;				
+	}
+	if(obj!=a){
+		obj=a;
+	}else{
+		obj=null;
+	}			
+}		
+	
+checkbox  实现单选(必选一个)  checkbox失效使用   onchange 函数  
+
+var obj=null;
+function check(a){			
+	if(obj!=null){
+		obj.checked=!obj.checked;				
+	}
+	obj=a;			
+}		
