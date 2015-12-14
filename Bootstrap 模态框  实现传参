@@ -1,5 +1,5 @@
 var removebid=null;
-function savebid(bid){
+function removebidsave(bid){
 	removebid=bid;
 }
 function remove1(flag){	
@@ -22,7 +22,7 @@ function remove1(flag){
 
 
 
-<a id="modal-1" href="#modal-container-1" role="button" style="float:right;" class="btn" data-toggle="modal"  onclick="savebid({$v.bid})">删除</a>
+<a id="modal-1" href="#modal-container-1" role="button" style="float:right;" class="btn" data-toggle="modal"  onclick="removebidsave({$v.bid})">删除</a>
 
 <!-- 模态框 -->
 
