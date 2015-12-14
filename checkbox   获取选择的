@@ -1,0 +1,32 @@
+<ul contenteditable="false" class="unstyled" id="weixiu1" style="width: 280px;">
+    <li style="margin-bottom: 10px;"><input type="checkbox"></li>
+</ul>
+
+
+
+获取所有选中的  checkbox 是否选中 获取的是第一个 checkbox				
+$("#weixiu1 input[type='checkbox']").is(':checked');
+$("#weixiu1 :checkbox").is(':checked');
+		    
+         获取所有选中的  checkbox 的  value
+$("#weixiu1 input[type='checkbox']").attr('value');
+$("#weixiu1 :checkbox").attr('value');
+$("#weixiu1 :checkbox").val();
+			    
+  获取所有选中的  checkbox 返回一个对象			  	  
+$("#weixiu1 input:checkbox:checked");
+$("#weixiu1 input:checkbox[name='name']:checked"); 
+$("#weixiu1 :checkbox:checked");
+
+check=$("#weixiu1 :checkbox:checked");
+check.length;
+check[0].value;
+
+
+// 创建对象传输对象数据
+var data={weixiu:[],weizhi:"",jianyi:"",time:""};
+check=$("#weixiu1 :checkbox:checked");
+for(var i=0;i<check.length;i++){
+	 data['weixiu'][i]=check[i].value;
+	// alert(check[i].value);
+}
