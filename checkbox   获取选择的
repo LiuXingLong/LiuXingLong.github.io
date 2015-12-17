@@ -30,3 +30,13 @@ for(var i=0;i<check.length;i++){
 	 data['weixiu'][i]=check[i].value;
 	// alert(check[i].value);
 }
+
+// 获取选中checkbox后的文本
+check=$(":checkbox:checked");
+for(var i=0;i<check.length;i++){
+	alert(check[i].nextSibling.nodeValue);
+}
+
+
+
+
