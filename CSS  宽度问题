@@ -1,0 +1,5 @@
+.panel-body{
+  /* 子元素不超过该元素的宽度  */
+   word-break: break-all;
+   word-wrap: break-word;
+  }
