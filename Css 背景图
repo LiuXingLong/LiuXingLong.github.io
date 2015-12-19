@@ -1,0 +1,13 @@
+电脑浏览器相对浏览器宽口定位
+.body{
+     background:url(__PUBLIC__/css/body.jpg);
+     background-attachment:fixed; /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+     background-repeat:no-repeat; /* 背景图不平铺 */
+}
+
+手机端浏览器访问
+.body{
+     background-image: url(__PUBLIC__/css/body.jpg);
+     background-size: cover; /* 让背景图基于容器大小伸缩 */
+     background-position: center center; /* 背景图垂直、水平均居中     加上这个属性后图片会采用多张图平铺背景的效果         */ 
+}
