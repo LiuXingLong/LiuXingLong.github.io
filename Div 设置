@@ -1,0 +1,10 @@
+div 滚动条设置  overflow
+
+div text  换行处理
+
+white-space:normal;   空白的不换行.
+word-break:break-all;  文字换行.
+overflow:hidden;  超出部分隐藏.
+
+
+
