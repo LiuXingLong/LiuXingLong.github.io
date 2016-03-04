@@ -8,3 +8,11 @@ overflow:hidden;  超出部分隐藏.
 
 
 
+// 设置滚动调到底部
+function overflow(){
+	var div = document.getElementById('showchat');
+	div.scrollTop = div.scrollHeight;
+}
+
+<div id="showchat" class="panel-body" style="height: 260px;background-color:rgba(223, 240, 216, 0.64);overflow-y:auto;"></div>
+
